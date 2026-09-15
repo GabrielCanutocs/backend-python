@@ -1,18 +1,14 @@
 from modelos.academia import Academia
+from modelos.maquinario.maquina_cardio import MaquinaCardio
+from modelos.maquinario.maquina_musculacao import MaquinaMusculacao
 
 academia_movimento = Academia("Movimento", 130)
-academia_corpos = Academia("Corpos", 140)
-academia_contorno = Academia("Contorno", 150)
-
-academia_movimento.ativa_academia()
-
-academia_movimento.receber_avaliacao("Gabriel", 9)
-academia_movimento.receber_avaliacao("Luiz", 10)
-academia_movimento.receber_avaliacao("Davi", 6)
+supino_reto = MaquinaMusculacao("supino_reto", "titako", "peito", "100kg")
+esteira = MaquinaCardio("esteira", "xlr8", "20km/h")
 
 def main():
-    Academia.lista_academias()
-
+    print(supino_reto)
+    print(esteira)
 
 if __name__ == "__main__":
     main()
