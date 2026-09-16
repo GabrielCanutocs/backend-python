@@ -8,3 +8,6 @@ class MaquinaMusculacao(Equipamento):
 
     def __str__(self):
         return self._nome
+
+    def realizar_manutencao(self):
+        print(f"Manutenção: Lubrificando os cabos e apertando os parafusos do(a) {self._nome}.")

@@ -10,6 +10,8 @@ academia_movimento.adiciona_equipamento(esteira)
 
 def main():
     academia_movimento.lista_equipamentos
+    esteira.realizar_manutencao()
+    supino_reto.realizar_manutencao()
 
 if __name__ == "__main__":
     main()
